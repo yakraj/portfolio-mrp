@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.b-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.he-f {
+  height: 100%;
+}
+
+.wi-f {
+  height: 100%;
+}
+.c-p {
+  cursor: pointer;
+}
