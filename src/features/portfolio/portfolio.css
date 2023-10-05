@@ -1,0 +1,124 @@
+.port-top-left-graphics {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+}
+.port-top-right-graphics {
+  position: absolute;
+  top: 12%;
+  right: -10%;
+}
+
+.port-bottom-left-graphics {
+  position: absolute;
+  left: -7%;
+  bottom: -8%;
+}
+
+.port-bottom-right-graphics {
+  position: absolute;
+  right: -5%;
+  bottom: -12%;
+  transform: rotate(-10deg);
+}
+.branding-portfolio {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px;
+}
+
+.branding-heading {
+  position: relative;
+  > h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+  }
+  > p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 10.83px;
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+  }
+  > .branding-style-circle {
+    background: rgba(185, 184, 184, 0.151);
+    position: absolute;
+    border-radius: 50%;
+    border-top: 3px solid #303030;
+    transform: rotate(-45deg);
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: difference;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2.5px);
+    top: 30%;
+    left: 75%;
+  }
+}
+
+.branding-circles {
+  position: relative;
+  > .first-web-circle,
+  .second-apps-circle {
+    background: rgba(141, 141, 141, 0.35);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(40px);
+    color: #fff;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  > .second-apps-circle {
+    position: absolute;
+    left: -30%;
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    font-size: 15px;
+  }
+}
+hr {
+  width: 95%;
+  border: none;
+  height: 3px;
+  border-radius: 51px;
+  background: #8c6363;
+  flex-shrink: 0;
+  margin-top: -20px;
+}
+.posts-corusel::-webkit-scrollbar {
+  display: none;
+}
+.posts-corusel {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  width: 98%;
+  overflow-y: hidden;
+  > .single-post {
+    width: 211px;
+    height: 266px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: rgba(217, 217, 217, 0.46);
+    flex-shrink: 0;
+    backdrop-filter: blur(10.5px);
+  }
+}

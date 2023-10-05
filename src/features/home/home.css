@@ -12,7 +12,7 @@
   box-shadow: 0 0 5px GREY;
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(30px);
 }
 .graphical-content-body {
   width: 83%;

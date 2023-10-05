@@ -12,6 +12,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.f-cl {
+  flex-direction: column;
+}
 
 .h-center {
   display: flex;
@@ -27,7 +30,7 @@ body {
 }
 
 .wi-f {
-  height: 100%;
+  width: 100%;
 }
 .c-p {
   cursor: pointer;

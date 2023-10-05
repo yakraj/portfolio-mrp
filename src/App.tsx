@@ -1,12 +1,13 @@
-import { Home } from './features/home/home'
+import { Home } from "./features/home/home";
+import { Portfolio } from "./features/portfolio/portfolio";
 
 function App() {
-
   return (
     <>
-     <Home/>
+      {/* <Home/> */}
+      <Portfolio />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
