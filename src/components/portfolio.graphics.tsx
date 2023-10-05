@@ -5,6 +5,7 @@ export const PortfolioGraphics = () => {
     <>
       {/* two bottom and top graphics will be appear here */}
       {/* top left graphics */}
+      <div className="top-title-blur-circle"></div>
       <div className="port-top-left-graphics">
         <div
           style={{

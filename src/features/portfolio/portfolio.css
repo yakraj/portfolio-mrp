@@ -3,6 +3,18 @@
   top: 10%;
   left: -10%;
 }
+.top-title-blur-circle {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  background: #ce77a6;
+  filter: blur(60px);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  border-radius: 50%;
+  z-index: 100;
+}
 .port-top-right-graphics {
   position: absolute;
   top: 12%;
@@ -32,7 +44,7 @@
   position: relative;
   > h1 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 900;
@@ -44,7 +56,7 @@
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 10.83px;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -77,7 +89,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(40px);
     color: #fff;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 900;
@@ -120,5 +132,127 @@ hr {
     background: rgba(217, 217, 217, 0.46);
     flex-shrink: 0;
     backdrop-filter: blur(10.5px);
+  }
+}
+.testamony-corusel {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  > .single-testamony {
+    width: 250.75px;
+    height: 120px;
+    flex-shrink: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0px 72.063px 72.063px 31.375px;
+    background: #d9d9d9;
+    > .testamony-avatar {
+      width: 52.875px;
+      height: 52.875px;
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      flex-shrink: 0;
+      border-radius: 52.875px;
+      border: 5.625px solid #d9d9d9;
+      background-image: url(https://picsum.photos/200);
+      background-size: cover;
+      background-position: center;
+    }
+    > .testamony-details {
+      > p {
+        font-size: 14px;
+      }
+      > h1 {
+        margin-left: 25px;
+        color: #5b5b5b;
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+      }
+      > .testamony {
+        color: #5b5b5b;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      > .testamony-from {
+        color: #007d67;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 80%;
+        text-align: right;
+        line-height: normal;
+      }
+    }
+  }
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+/* from here css starts for about project */
+
+.about-project {
+  > h1 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  > .project-type {
+    display: flex;
+    margin-top: -5px;
+    > .project-icon {
+      height: 15px;
+      width: 20px;
+      background: pink;
+    }
+    > p {
+      color: #d9d9d9;
+      font-family: Inter, sans-serif;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 10.83px;
+      text-transform: uppercase;
+    }
+  }
+  > .project-desc {
+    margin-top: 50px;
+    color: #d9d9d9;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: normal;
+    width: 50%;
+  }
+  > button {
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 19.5px;
+    background: #797b98;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }

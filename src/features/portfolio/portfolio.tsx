@@ -2,6 +2,7 @@ import React from "react";
 import "../home/home.css";
 import "./portfolio.css";
 import { PortfolioGraphics } from "../../components/portfolio.graphics";
+import { TestamonyCard } from "../../components/portofolio.testamony";
 export const Portfolio = () => {
   return (
     <>
@@ -39,6 +40,14 @@ export const Portfolio = () => {
                 <div className="single-post"></div>
                 <div className="single-post"></div>
                 <div className="single-post"></div>
+              </div>
+              <hr style={{ marginTop: "10px" }} />
+              {/* from here there will be another corusel named testamony corusel */}
+
+              <div className="testamony-corusel">
+                <TestamonyCard />
+                <TestamonyCard />
+                <TestamonyCard />
               </div>
             </div>
           </div>
