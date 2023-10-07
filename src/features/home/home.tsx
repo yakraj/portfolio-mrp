@@ -48,7 +48,15 @@ export const Home = () => {
           <div className="content-body">
             {/* content body has two sides left and right */}
             {/* content body left side */}
-            <div className="content-body-left he-f">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                // alignItems: 'center'
+              }}
+              className="content-body-left he-f"
+            >
               {/* title starts here */}
               <div className="branding-title">
                 {/* over graphics overlays starts here */}

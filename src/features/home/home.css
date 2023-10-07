@@ -12,7 +12,7 @@
   box-shadow: 0 0 5px GREY;
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(30px);
 }
 .graphical-content-body {
   width: 83%;
@@ -27,8 +27,11 @@
   background: #26283e;
 }
 .content-body-left {
-  padding-left: 4%;
-  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 8% 0% 8% 4%;
 }
 .big-name {
   color: #000;
@@ -54,7 +57,7 @@
 .my-slogon {
   color: #a4a4a4;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -64,10 +67,12 @@
   padding: 0;
 }
 .myself {
-  width: 544px;
+  width: 500px;
   color: #a4a4a4;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 15px;
+  margin-top: 40px;
+  /* width: 40%; */
   font-style: normal;
   font-weight: 300;
   line-height: 171.023%;
@@ -95,8 +100,9 @@
   height: 167px;
   position: absolute;
   flex-shrink: 0;
-  right: 50px;
+  right: 80px;
   top: -50px;
+  z-index: 100;
   mix-blend-mode: difference;
 }
 .thirdYbott {
@@ -105,10 +111,10 @@
   stroke-width: 2px;
   position: absolute;
   stroke: #fff;
-  width: 167px;
-  height: 167px;
-  bottom: -60px;
-  left: -20px;
+  width: 110px;
+  height: 110px;
+  bottom: -10px;
+  left: 15px;
   flex-shrink: 0;
   backdrop-filter: blur(10px);
 }

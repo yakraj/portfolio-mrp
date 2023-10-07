@@ -1,11 +1,12 @@
 .message-box {
   width: 461px;
-  height: 571px;
+  height: 70%;
+  max-height: 571px;
   flex-shrink: 0;
   border-radius: 39px;
-  background: rgba(217, 217, 217, 0.05);
-  box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.68);
-  backdrop-filter: blur(0.5px);
+  background: rgba(217, 217, 217, 0.192);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.68);
+  /* backdrop-filter: blur(15px); */
   padding: 40px;
   box-sizing: border-box;
   > div {
@@ -15,25 +16,230 @@
     align-items: start;
 
     > .lebel {
-      margin-left: 30px;
+      margin-top: 10px;
+      margin-left: 20px;
       color: #fff;
       font-family: Inter;
       font-size: 9px;
       font-style: normal;
       font-weight: 500;
       letter-spacing: 1px;
-      background: #404254;
-      padding: 10px;
+      background: #6c6d7b;
+      z-index: 1;
+      padding: 0 5px 0 5px;
+      margin-bottom: -7px;
       line-height: normal;
       text-transform: uppercase;
     }
-    > input {
+    > input,
+    textarea {
       width: 354px;
       height: 40px;
+      outline: none;
+      color: #fff;
       flex-shrink: 0;
+      font-size: 15px;
       background: none;
+      padding-left: 15px;
       border-radius: 6px;
       border: 1px solid #fff;
     }
+    > textarea {
+      width: 354px;
+      padding-top: 15px;
+      height: 117.5px;
+      flex-shrink: 0;
+      background: none;
+      border: 1px solid #fff;
+    }
   }
+  > button {
+    width: 150px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    background: radial-gradient(
+      1435.88% 225.31% at 14.05% 26.53%,
+      rgba(203, 221, 93, 0.84) 0%,
+      rgba(177, 55, 77, 0) 100%
+    );
+    color: #fff;
+    align-self: center;
+    left: 30%;
+    position: relative;
+    margin-top: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.575px;
+    text-transform: uppercase;
+  }
+}
+
+.randomball1 {
+  position: absolute;
+  top: -4%;
+  right: 20%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    rgba(244, 199, 112, 0.82) 28.47%,
+    rgba(244, 168, 18, 0.82) 56.65%,
+    rgba(106, 74, 12, 0.82) 87.17%,
+    rgba(68, 51, 18, 0.82) 100%
+  );
+  width: 252px;
+  border-radius: 50%;
+  height: 252px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+
+.randomball3 {
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #e48181 28.47%,
+    #ff0f0f 56.65%,
+    #721717 87.17%,
+    #6a2525 100%
+  );
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
+}
+
+.randomball5 {
+  position: absolute;
+  top: 40%;
+  right: 14%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #a1e481 28.47%,
+    #5cff0f 56.65%,
+    #347217 87.17%,
+    #336a25 100%
+  );
+  flex-shrink: 0;
+}
+.randomball6 {
+  position: absolute;
+  top: -25%;
+  right: -15%;
+  width: 250px;
+  height: 250px;
+  border-radius: 288px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #e48181 28.47%,
+    #ff0f0f 56.65%,
+    #721717 87.17%,
+    #6a2525 100%
+  );
+  flex-shrink: 0;
+}
+.randomball7 {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  border-radius: 50%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #e48181 28.47%,
+    #ff0f0f 56.65%,
+    #721717 87.17%,
+    #6a2525 100%
+  );
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+.randomball8 {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  border-radius: 50%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #e48181 28.47%,
+    #ff0f0f 56.65%,
+    #721717 87.17%,
+    #6a2525 100%
+  );
+  width: 132px;
+  height: 132px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+
+.randomball9 {
+  position: absolute;
+  bottom: -4%;
+  right: 45%;
+  border-radius: 50%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #81cde4 28.47%,
+    #0ff1ff 56.65%,
+    #176c72 87.17%,
+    #25666a 100%
+  );
+  width: 132px;
+  height: 132px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+.randomball10 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  border-radius: 50%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    rgba(234, 112, 244, 0.82) 28.47%,
+    rgba(213, 18, 244, 0.82) 56.65%,
+    rgba(104, 12, 106, 0.82) 87.17%,
+    rgba(64, 18, 68, 0.82) 100%
+  );
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+.randomball11 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    109.04% 96.57% at 14.78% 19.89%,
+    #e2e2e2 0%,
+    #81e4a9 28.47%,
+    #81e4a9 56.65%,
+    #81e4a9 87.17%,
+    #81e4a9 100%
+  );
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
 }

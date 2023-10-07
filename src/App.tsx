@@ -6,10 +6,10 @@ import { ContactPage } from "./features/contact/contact";
 function App() {
   return (
     <>
-      {/* <Home />
-      <Portfolio />
-      <AboutProject /> */}
-      <ContactPage />
+      <Home />
+      {/* <Portfolio /> */}
+      {/* <AboutProject /> */}
+      {/* <ContactPage /> */}
     </>
   );
 }

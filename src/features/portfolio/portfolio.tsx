@@ -14,19 +14,20 @@ export const Portfolio = () => {
               {/* all content starts from here */}
 
               {/* top title start here */}
-
-              <div className="branding-portfolio">
-                <div className="branding-heading">
-                  <h1>Projects</h1>
-                  <p>work from the next level</p>
-                  <div className="branding-style-circle"></div>
+              <div style={{ width: "100%" }}>
+                <div className="branding-portfolio">
+                  <div className="branding-heading">
+                    <h1>Projects</h1>
+                    <p>work from the next level</p>
+                    <div className="branding-style-circle"></div>
+                  </div>
+                  <div className="branding-circles">
+                    <div className="first-web-circle b-center">web</div>
+                    <div className="second-apps-circle b-center">web</div>
+                  </div>
                 </div>
-                <div className="branding-circles">
-                  <div className="first-web-circle b-center">web</div>
-                  <div className="second-apps-circle b-center">web</div>
-                </div>
+                <hr />
               </div>
-              <hr />
 
               {/* here will be a very beautifu carusel for posts */}
 
@@ -41,13 +42,15 @@ export const Portfolio = () => {
                 <div className="single-post"></div>
                 <div className="single-post"></div>
               </div>
-              <hr style={{ marginTop: "10px" }} />
-              {/* from here there will be another corusel named testamony corusel */}
+              <div style={{ width: "100%" }}>
+                <hr style={{ marginTop: "10px" }} />
+                {/* from here there will be another corusel named testamony corusel */}
 
-              <div className="testamony-corusel">
-                <TestamonyCard />
-                <TestamonyCard />
-                <TestamonyCard />
+                <div className="testamony-corusel">
+                  <TestamonyCard />
+                  <TestamonyCard />
+                  <TestamonyCard />
+                </div>
               </div>
             </div>
           </div>
