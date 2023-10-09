@@ -4,14 +4,15 @@ import { Portfolio } from "./features/portfolio/portfolio";
 import { ContactPage } from "./features/contact/contact";
 import { NavBar } from "./features/nav/navbar";
 import "./features/home/home.css";
+import { MainProvider } from "./services/main.context";
 function App() {
   return (
-    <>
-      <Home />
-      {/* <Portfolio /> */}
+    <MainProvider>
+      {/* <Home /> */}
+      <Portfolio />
       {/* <AboutProject /> */}
       {/* <ContactPage /> */}
-    </>
+    </MainProvider>
   );
 }
 
