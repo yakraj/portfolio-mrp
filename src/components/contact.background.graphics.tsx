@@ -32,15 +32,15 @@ export const ContactGraphics = () => {
           flexShrink: "0",
         }}
       ></div>
-      <div className="randomball1">1</div>
-      <div className="randomball3">3</div>
-      <div className="randomball5">5</div>
-      <div className="randomball6">6</div>
-      <div className="randomball7">7</div>
-      <div className="randomball8">8</div>
-      <div className="randomball9">9</div>
-      <div className="randomball10">10</div>
-      <div className="randomball11">11</div>
+      <div className="randomball1"> </div>
+      <div className="randomball3"> </div>
+      <div className="randomball5"> </div>
+      {/* <div className="randomball6"> </div> */}
+      <div className="randomball7"> </div>
+      <div className="randomball8"> </div>
+      <div className="randomball9"> </div>
+      <div className="randomball10"> </div>
+      <div className="randomball11"> </div>
     </>
   );
 };

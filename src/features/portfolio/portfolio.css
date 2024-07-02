@@ -107,7 +107,7 @@
     font-size: 15px;
   }
 }
-hr {
+/* hr {
   width: 95%;
   border: none;
   height: 3px;
@@ -115,7 +115,7 @@ hr {
   background: #8c6363;
   flex-shrink: 0;
   margin-top: -20px;
-}
+} */
 .posts-corusel::-webkit-scrollbar {
   display: none;
 }
@@ -258,4 +258,16 @@ p {
     font-weight: 500;
     line-height: normal;
   }
+}
+.technology-profile .details {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin: 15px 0px;
+  color: #fff;
+}
+.technology-profile {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 50px;
 }

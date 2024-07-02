@@ -80,25 +80,53 @@ export const Home = () => {
                 on my field.
               </p>
 
-              <button className="hire-button c-p">HIRE ME</button>
+              <button
+                onClick={() => (location.href = "mailto:dmtyakraj@gmail.com")}
+                className="hire-button c-p"
+              >
+                HIRE ME
+              </button>
             </div>
             {/* content body right side */}
             <div className="content-body-right">
               <div className="back-show-spi">
-                <img width="100%" alt="spinner" src={Spinner} />
+                {/* <img width="100%" alt="spinner" src={Spinner} /> */}
               </div>
               <div className="home-image-bio">
-                <img width="90%" className="myimage" alt="my image" src={Me} />
+                {/* <img width="90%" className="myimage" alt="my image" src={Me} /> */}
                 <div className="social-sites">
-                  <img alt="twitter" className="c-p" src={twitter} />
-                  <img alt="linkedin" className="c-p" src={linkedin} />
-                  <img alt="github" className="c-p" src={github} />
-                  <img alt="youtube" className="c-p" src={youtube} />
+                  <img
+                    onClick={() => window.open("https://x.com/YakrajPariyar")}
+                    alt="twitter"
+                    className="c-p"
+                    src={twitter}
+                  />
+                  <img
+                    onClick={() =>
+                      window.open("https://www.linkedin.com/in/yakraj/")
+                    }
+                    alt="linkedin"
+                    className="c-p"
+                    src={linkedin}
+                  />
+                  <img
+                    onClick={() => window.open("https://github.com/yakraj")}
+                    alt="github"
+                    className="c-p"
+                    src={github}
+                  />
+                  <img
+                    onClick={() =>
+                      window.open("https://www.youtube.com/@yakraj")
+                    }
+                    alt="youtube"
+                    className="c-p"
+                    src={youtube}
+                  />
                 </div>
               </div>
             </div>
             {/* here the navbar will be placed */}
-            <NavBar />
           </div>
         </div>
       </div>

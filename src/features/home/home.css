@@ -21,7 +21,7 @@
 .main-body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: #26283e;
 }
 .content-body-left {
@@ -32,7 +32,7 @@
   padding: 8% 0% 8% 4%;
 }
 .big-name {
-  color: #000;
+  color: #ff8686;
   font-family: Inter;
   font-size: 139px;
   font-style: normal;
@@ -43,7 +43,7 @@
 }
 .small-sirname {
   transform: rotate(-90deg);
-  color: #bdbaba;
+  color: #1cffa3;
   margin: 0;
   margin-left: 10px;
   font-family: Inter;
@@ -140,11 +140,6 @@
   align-items: center;
   height: 100%;
   border-radius: 0px 35px 35px 0px;
-  background: radial-gradient(
-    96.36% 110.18% at 50% 50%,
-    #51515175 0%,
-    rgba(81, 81, 81, 0) 100%
-  );
   flex-shrink: 0;
 }
 .myimage {

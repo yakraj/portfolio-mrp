@@ -8,7 +8,7 @@ import { MainProvider } from "./services/main.context";
 function App() {
   return (
     <MainProvider>
-      {/* <Home /> */}
+      <Home />
       <Portfolio />
       {/* <AboutProject /> */}
       {/* <ContactPage /> */}

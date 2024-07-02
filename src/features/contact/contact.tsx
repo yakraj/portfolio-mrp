@@ -29,7 +29,6 @@ export const ContactPage = () => {
               <button> send</button>
             </div>
             {/* here the navbar will be placed */}
-            <NavBar />
           </div>
         </div>
       </div>

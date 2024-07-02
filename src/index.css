@@ -6,7 +6,9 @@ body {
 .flex {
   display: flex;
 }
-
+#root {
+  overflow: hidden;
+}
 .b-center {
   display: flex;
   justify-content: center;
