@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import "../home/home.css";
 import "./portfolio.css";
 import { PortfolioGraphics } from "../../components/portfolio.graphics";
-import { TestamonyCard } from "../../components/portofolio.testamony";
-import { NavBar } from "../nav/navbar";
+// import { TestamonyCard } from "../../components/portofolio.testamony";
+// import { NavBar } from "../nav/navbar";
 export const Portfolio = () => {
   return (
     <>

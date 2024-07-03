@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import "./contact.css";
 import { ContactGraphics } from "../../components/contact.background.graphics";
-import { NavBar } from "../nav/navbar";
+
 export const ContactPage = () => {
   return (
     <>

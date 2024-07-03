@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./home.css";
 
 // image import
 
-import Me from "../../assets/me.png";
+// import Me from "../../assets/me.png";
 import twitter from "../../assets/twitter.png";
-import Spinner from "../../assets/spinner.png";
+// import Spinner from "../../assets/spinner.png";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import youtube from "../../assets/youtube.png";
-import { NavBar } from "../nav/navbar";
+// import { NavBar } from "../nav/navbar";
 export const Home = () => {
   useEffect(() => {
     console.log("this is really a but");

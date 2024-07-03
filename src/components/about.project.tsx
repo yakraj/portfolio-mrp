@@ -1,4 +1,4 @@
-import * as React from "react";
+// import React from "react";
 import "../features/portfolio/portfolio.css";
 export const AboutProject = () => {
   return (
@@ -19,7 +19,7 @@ export const AboutProject = () => {
               <div className="project-icon"></div>
               <p>ecommerce</p>
             </div>
-            <p class="project-desc">
+            <p className="project-desc">
               Lorem ipsum dolor sit amet consectetur. Urna ultrices ac enim eu
               fermentum nam facilisis. Quis praesent et et leo amet varius. Enim
               non elementum sed sem varius. Risus tristique nec ullamcorper enim
