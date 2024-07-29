@@ -1,6 +1,23 @@
 // import React from "react";
 import "../features/portfolio/portfolio.css";
+import { MobilePhone } from "./mobile.phone";
+import chattings from "../assets/message.json";
+import { useEffect, useState } from "react";
 export const AboutProject = () => {
+  const [chats, setChats] = useState<any[]>([]); // Specify the type of state 'chats'
+
+  useEffect(() => {
+    // Retrieve chats from JSON file or API response
+    const tempchats = chattings.chattings; // Assuming chattings is an array of chat messages
+
+    // Use a functional update to ensure state is updated correctly
+    tempchats.forEach((message, index) => {
+      setTimeout(() => {
+        setChats((prevChats) => [...prevChats, message]);
+      }, index * 2000);
+    });
+  }, []);
+
   return (
     <>
       <div className="main-body b-center">
@@ -14,29 +31,20 @@ export const AboutProject = () => {
             }}
             className="content-body about-project"
           >
-            <h1>Sunaulo</h1>
-            <div className="project-type">
-              <div className="project-icon"></div>
-              <p>ecommerce</p>
-            </div>
-            <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur. Urna ultrices ac enim eu
-              fermentum nam facilisis. Quis praesent et et leo amet varius. Enim
-              non elementum sed sem varius. Risus tristique nec ullamcorper enim
-              morbi adipiscing quam.
-            </p>
-            <button className="project-visit c-p">Visit</button>
-
-            <div className="posts-corusel">
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
-              <div className="single-post"></div>
+            <div className="main-chat-container">
+              <div className="text-side">
+                <h1>Realtime Apps</h1>
+                <p className="project-desc">
+                  Lorem ipsum dolor sit amet consectetur. Urna ultrices ac enim
+                  eu fermentum nam facilisis. Quis praesent et et leo amet
+                  varius. Enim non elementum sed sem varius. Risus tristique nec
+                  ullamcorper enim morbi adipiscing quam.
+                </p>
+              </div>
+              <div className="mobile-chat-container">
+                <MobilePhone chats={chats} />
+                <MobilePhone chats={chats} />
+              </div>
             </div>
           </div>
         </div>

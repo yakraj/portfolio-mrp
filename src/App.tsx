@@ -1,4 +1,4 @@
-// import { AboutProject } from "./components/about.project";
+import { AboutProject } from "./components/about.project";
 import { Home } from "./features/home/home";
 import { Portfolio } from "./features/portfolio/portfolio";
 // import { ContactPage } from "./features/contact/contact";
@@ -10,7 +10,7 @@ function App() {
     <MainProvider>
       <Home />
       <Portfolio />
-      {/* <AboutProject /> */}
+      <AboutProject />
       {/* <ContactPage /> */}
     </MainProvider>
   );

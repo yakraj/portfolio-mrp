@@ -1,0 +1,159 @@
+{
+  "chattings": [
+    { "message": "Hey there!", "side": "left" },
+    { "message": "Hi! How can I help you today?", "side": "right" },
+    {
+      "message": "I'm looking for information on your products.",
+      "side": "left"
+    },
+    { "message": "Sure! Our products are...", "side": "right" },
+    {
+      "message": "That sounds great! Do you offer any discounts?",
+      "side": "left"
+    },
+    {
+      "message": "Yes, we have ongoing promotions on certain items.",
+      "side": "right"
+    },
+    { "message": "Awesome! Could you provide more details?", "side": "left" },
+    { "message": "Certainly! The discounts range from...", "side": "right" },
+    {
+      "message": "Thanks for the info! I'll consider placing an order soon.",
+      "side": "left"
+    },
+    {
+      "message": "You're welcome! Feel free to reach out if you have any more questions.",
+      "side": "right"
+    },
+    {
+      "message": "I have a question about your return policy.",
+      "side": "left"
+    },
+    { "message": "Our return policy allows...", "side": "right" },
+    {
+      "message": "That's good to know. What if the product is damaged upon arrival?",
+      "side": "left"
+    },
+    { "message": "In such cases, we offer...", "side": "right" },
+    { "message": "Okay, thanks for clarifying!", "side": "left" },
+    {
+      "message": "You're welcome! We aim to provide clear policies for our customers.",
+      "side": "right"
+    },
+    {
+      "message": "I have another query regarding shipping options.",
+      "side": "left"
+    },
+    {
+      "message": "We offer several shipping options including...",
+      "side": "right"
+    },
+    {
+      "message": "Great! How long does standard shipping usually take?",
+      "side": "left"
+    },
+    { "message": "Standard shipping typically takes...", "side": "right" },
+    {
+      "message": "Got it. That's within my timeframe. Thanks for the details!",
+      "side": "left"
+    },
+    {
+      "message": "You're welcome! Let me know if there's anything else I can assist you with.",
+      "side": "right"
+    },
+    {
+      "message": "I'm interested in your latest product release.",
+      "side": "left"
+    },
+    { "message": "Our latest product is...", "side": "right" },
+    {
+      "message": "It looks impressive! Are there any reviews available?",
+      "side": "left"
+    },
+    { "message": "Yes, you can find reviews on our website.", "side": "right" },
+    { "message": "Thank you! I'll check them out.", "side": "left" },
+    {
+      "message": "You're welcome! Feel free to ask if you need more information.",
+      "side": "right"
+    },
+    {
+      "message": "Could you assist me with setting up an account?",
+      "side": "left"
+    },
+    {
+      "message": "Sure! To create an account, you need to...",
+      "side": "right"
+    },
+    { "message": "Got it. I'll proceed with that now.", "side": "left" },
+    {
+      "message": "Let me know if you encounter any issues during the process.",
+      "side": "right"
+    },
+    {
+      "message": "I'm experiencing difficulties with logging in.",
+      "side": "left"
+    },
+    {
+      "message": "Please ensure your credentials are entered correctly.",
+      "side": "right"
+    },
+    { "message": "It worked! Thanks for your assistance.", "side": "left" },
+    { "message": "You're welcome! I'm glad it's resolved.", "side": "right" },
+    { "message": "Can I change my order after placing it?", "side": "left" },
+    { "message": "Once an order is placed, changes...", "side": "right" },
+    { "message": "Understood. I'll keep that in mind.", "side": "left" },
+    {
+      "message": "Feel free to contact us if you have any urgent requests.",
+      "side": "right"
+    },
+    {
+      "message": "Do you have a phone number I can call for support?",
+      "side": "left"
+    },
+    { "message": "Our customer support number is...", "side": "right" },
+    { "message": "Thanks! I'll make a note of that.", "side": "left" },
+    {
+      "message": "You're welcome! We're here to help whenever you need us.",
+      "side": "right"
+    },
+    {
+      "message": "I'm interested in learning more about your company.",
+      "side": "left"
+    },
+    { "message": "We specialize in...", "side": "right" },
+    {
+      "message": "That's impressive! How long have you been in business?",
+      "side": "left"
+    },
+    { "message": "We've been serving customers since...", "side": "right" },
+    {
+      "message": "It's good to know you have experience in the industry.",
+      "side": "left"
+    },
+    {
+      "message": "Thank you! We strive to provide quality products and services.",
+      "side": "right"
+    },
+    {
+      "message": "I have a technical question about one of your products.",
+      "side": "left"
+    },
+    {
+      "message": "Please provide details about the issue you're facing.",
+      "side": "right"
+    },
+    {
+      "message": "The product seems to have a compatibility issue with...",
+      "side": "left"
+    },
+    {
+      "message": "Let me check on that and get back to you with a solution.",
+      "side": "right"
+    },
+    { "message": "Thank you for your assistance!", "side": "left" },
+    {
+      "message": "You're welcome! We aim to provide prompt support to our customers.",
+      "side": "right"
+    }
+  ]
+}
