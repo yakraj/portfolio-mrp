@@ -8,8 +8,8 @@ import { MainProvider } from "./services/main.context";
 function App() {
   return (
     <MainProvider>
-      <Home />
-      <Portfolio />
+      {/* <Home />
+      <Portfolio /> */}
       <AboutProject />
       {/* <ContactPage /> */}
     </MainProvider>

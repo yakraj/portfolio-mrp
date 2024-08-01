@@ -3,20 +3,41 @@ import "../features/portfolio/portfolio.css";
 import { MobilePhone } from "./mobile.phone";
 import chattings from "../assets/message.json";
 import { useEffect, useState } from "react";
+import { MobilePhoneOpp } from "./mobile.phone1";
 export const AboutProject = () => {
   const [chats, setChats] = useState<any[]>([]); // Specify the type of state 'chats'
+  const [chats1, setChats1] = useState<any[]>([]); // Specify the type of state 'chats'
 
   useEffect(() => {
-    // Retrieve chats from JSON file or API response
-    const tempchats = chattings.chattings; // Assuming chattings is an array of chat messages
-
-    // Use a functional update to ensure state is updated correctly
-    tempchats.forEach((message, index) => {
-      setTimeout(() => {
-        setChats((prevChats) => [...prevChats, message]);
-      }, index * 2000);
-    });
-  }, []);
+    if (chats.length % 2 === 0) {
+      chattings.chattings[chats.length]
+        ? setTimeout(() => {
+            setChats([...chats, chattings.chattings[chats.length]]);
+          }, 2000)
+        : null;
+    } else {
+      chattings.chattings[chats.length]
+        ? setTimeout(() => {
+            setChats([...chats, chattings.chattings[chats.length]]);
+          }, 3000)
+        : null;
+    }
+  }, [chats]);
+  useEffect(() => {
+    if (chats1.length % 2 === 0) {
+      chattings.chattings[chats1.length]
+        ? setTimeout(() => {
+            setChats1([...chats1, chattings.chattings[chats1.length]]);
+          }, 3000)
+        : null;
+    } else {
+      chattings.chattings[chats1.length]
+        ? setTimeout(() => {
+            setChats1([...chats1, chattings.chattings[chats1.length]]);
+          }, 1000)
+        : null;
+    }
+  }, [chats1]);
 
   return (
     <>
@@ -43,7 +64,7 @@ export const AboutProject = () => {
               </div>
               <div className="mobile-chat-container">
                 <MobilePhone chats={chats} />
-                <MobilePhone chats={chats} />
+                <MobilePhoneOpp chats={chats1} />
               </div>
             </div>
           </div>
