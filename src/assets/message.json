@@ -1,5 +1,6 @@
 {
   "chattings": [
+    { "message": "Hey ✋", "side": "right" },
     { "message": "Hey there!", "side": "left" },
     { "message": "Hi! How can I help you today?", "side": "right" },
     {
