@@ -1,3 +1,9 @@
+:root {
+  --main-left-mobile-center: 0px;
+  --main-left-top-mobile: 0px;
+  --red: red;
+  --right-mob-left-center: 0px;
+}
 .port-top-left-graphics {
   position: absolute;
   top: 10%;
@@ -270,4 +276,47 @@ p {
   width: 100%;
   justify-content: space-around;
   padding-top: 50px;
+}
+
+/* my new css starts from here */
+
+.chat-element {
+  height: 40px;
+  width: 40px;
+  background: var(--red);
+  border-radius: 50%;
+  position: absolute;
+  top: var(--main-left-top-mobile);
+  animation: ease-in-out 2s AnimateChat forwards;
+}
+
+.chat-element-rev {
+  top: var(--main-left-top-mobile);
+  animation: ease-in-out 2s AnimateChat-Rev forwards;
+}
+@keyframes AnimateChat {
+  0% {
+    top: var(--main-left-top-mobile);
+    left: var(--main-left-mobile-center);
+  }
+  50% {
+    top: -50px;
+  }
+  100% {
+    top: var(--main-left-top-mobile);
+    left: var(--right-mob-left-center);
+  }
+}
+@keyframes AnimateChat-Rev {
+  0% {
+    top: var(--main-left-top-mobile);
+    left: var(--right-mob-left-center);
+  }
+  50% {
+    top: -50px;
+  }
+  100% {
+    top: var(--main-left-top-mobile);
+    left: var(--main-left-mobile-center);
+  }
 }

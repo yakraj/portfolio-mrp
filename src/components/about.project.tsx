@@ -2,12 +2,16 @@
 import "../features/portfolio/portfolio.css";
 import { MobilePhone } from "./mobile.phone";
 import chattings from "../assets/message.json";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { MobilePhoneOpp } from "./mobile.phone1";
 export const AboutProject = () => {
   const [chats, setChats] = useState<any[]>([]); // Specify the type of state 'chats'
   const [chats1, setChats1] = useState<any[]>([]); // Specify the type of state 'chats'
   const [whoSent, setWhoSent] = useState<any[]>([]);
+  // writing syntax for the text send animation
+  const firstMobile = useRef();
+  const secondMobile = useRef();
+  const chatElement = useRef();
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,7 +19,7 @@ export const AboutProject = () => {
         if (whoSent.length > 0) {
           if (whoSent.length % 2 === 0) {
             // this is first timeout for receive message
-            console.log("it is false condition ");
+            // console.log("it is false condition ");
 
             setChats((preState) => [
               ...preState,
@@ -27,12 +31,13 @@ export const AboutProject = () => {
             setTimeout(() => {
               setWhoSent((preState) => [
                 ...preState,
-                chattings.chattings[whoSent.length],
+                chattings.chattings[whoSent.length].side,
               ]);
               setChats((preState) => [
                 ...preState,
                 chattings.chattings[whoSent.length],
               ]);
+              chatElement.current.classList.remove("chat-element-rev");
             }, 2000);
           } else {
             // this is first timeout for receive message
@@ -48,24 +53,24 @@ export const AboutProject = () => {
             setTimeout(() => {
               setWhoSent((preState) => [
                 ...preState,
-                chattings.chattings[whoSent.length],
+                chattings.chattings[whoSent.length].side,
               ]);
               setChats1((preState) => [
                 ...preState,
                 chattings.chattings[whoSent.length],
               ]);
+              chatElement.current.classList.add("chat-element-rev");
             }, 2000);
           }
         } else {
-          console.log("while the array is empty");
-          setWhoSent((preState) => [...preState, chattings.chattings[0]]);
+          // console.log("while the array is empty");
+          setWhoSent((preState) => [...preState, chattings.chattings[0].side]);
           setChats((preState) => [...preState, chattings.chattings[0]]);
         }
       }
-    }, 1000);
+    }, 2000);
   }, [whoSent]);
 
-  console.log(whoSent.length);
   // useEffect(() => {
   //   setTimeout(() => {
   //     setChats((preState) => [
@@ -141,6 +146,35 @@ export const AboutProject = () => {
   //   }
   // }, [chats1]);
 
+  useEffect(() => {
+    const toPos =
+      firstMobile.current.getBoundingClientRect().top -
+      firstMobile.current.parentElement.getBoundingClientRect().top +
+      "px";
+    const leftPos =
+      firstMobile.current.getBoundingClientRect().left +
+      firstMobile.current.getBoundingClientRect().width / 2 -
+      firstMobile.current.parentElement.getBoundingClientRect().left -
+      20 +
+      "px";
+    const rightPos =
+      secondMobile.current.getBoundingClientRect().left +
+      secondMobile.current.getBoundingClientRect().width / 2 -
+      secondMobile.current.parentElement.getBoundingClientRect().left -
+      20 +
+      "px";
+
+    document.documentElement.style.setProperty("--main-left-top-mobile", toPos);
+    document.documentElement.style.setProperty(
+      "--main-left-mobile-center",
+      leftPos
+    );
+    document.documentElement.style.setProperty(
+      "--right-mob-left-center",
+      rightPos
+    );
+    document.documentElement.style.setProperty("--red", "pink");
+  }, []);
   return (
     <>
       <div className="main-body b-center">
@@ -150,6 +184,7 @@ export const AboutProject = () => {
             style={{
               display: "block",
               paddingLeft: "50px",
+
               paddingTop: "50px",
             }}
             className="content-body about-project"
@@ -165,8 +200,12 @@ export const AboutProject = () => {
                 </p>
               </div>
               <div className="mobile-chat-container">
-                <MobilePhone chats={chats} />
-                <MobilePhoneOpp chats={chats1} />
+                <div ref={chatElement} className="chat-element">
+                  {/* <img src={require("../assets/phone.png")} alt="phone" /> */}
+                </div>
+
+                <MobilePhone Re={firstMobile} chats={chats} />
+                <MobilePhoneOpp Re={secondMobile} chats={chats1} />
               </div>
             </div>
           </div>

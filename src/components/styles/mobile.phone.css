@@ -66,6 +66,7 @@
 }
 .mobile-chat-container {
   display: flex;
+  position: relative;
 }
 
 .messagecontainer-left,

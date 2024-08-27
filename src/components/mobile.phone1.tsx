@@ -1,9 +1,9 @@
 import "./styles/mobile.phone.css";
 
-export const MobilePhoneOpp = ({ chats }) => {
+export const MobilePhoneOpp = ({ Re, chats }) => {
   return (
     <>
-      <div className="mobile-phone">
+      <div ref={Re} className="mobile-phone">
         <div className="mobile-upper-div">
           <div className="mobile-earpic"></div>
         </div>
@@ -13,7 +13,7 @@ export const MobilePhoneOpp = ({ chats }) => {
             .reverse()
             .map((i) => (
               <div
-                key={i.message}
+                key={i.message + Math.random()}
                 style={{
                   justifyContent: i.side === "left" && "flex-end",
                 }}
