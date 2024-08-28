@@ -3,6 +3,7 @@ import "../features/portfolio/portfolio.css";
 import { MobilePhone } from "./mobile.phone";
 import chattings from "../assets/message.json";
 import { useEffect, useState, useRef } from "react";
+import cloudImage from "../assets/cloud.webp";
 import { MobilePhoneOpp } from "./mobile.phone1";
 export const AboutProject = () => {
   const [chats, setChats] = useState<any[]>([]); // Specify the type of state 'chats'
@@ -173,7 +174,6 @@ export const AboutProject = () => {
       "--right-mob-left-center",
       rightPos
     );
-    document.documentElement.style.setProperty("--red", "pink");
   }, []);
   return (
     <>
@@ -199,13 +199,15 @@ export const AboutProject = () => {
                   ullamcorper enim morbi adipiscing quam.
                 </p>
               </div>
-              <div className="mobile-chat-container">
-                <div ref={chatElement} className="chat-element">
-                  {/* <img src={require("../assets/phone.png")} alt="phone" /> */}
+              <div className="cloud-container">
+                <div className="cloud-image">
+                  <img src={cloudImage} alt="cloud image" />
                 </div>
-
-                <MobilePhone Re={firstMobile} chats={chats} />
-                <MobilePhoneOpp Re={secondMobile} chats={chats1} />
+                <div className="mobile-chat-container">
+                  <div ref={chatElement} className="chat-element" />
+                  <MobilePhone Re={firstMobile} chats={chats} />
+                  <MobilePhoneOpp Re={secondMobile} chats={chats1} />
+                </div>
               </div>
             </div>
           </div>

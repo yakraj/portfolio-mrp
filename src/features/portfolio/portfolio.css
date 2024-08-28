@@ -1,7 +1,7 @@
 :root {
   --main-left-mobile-center: 0px;
   --main-left-top-mobile: 0px;
-  --red: red;
+  --message: skyblue;
   --right-mob-left-center: 0px;
 }
 .port-top-left-graphics {
@@ -281,13 +281,24 @@ p {
 /* my new css starts from here */
 
 .chat-element {
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  border-radius: 15px;
   height: 40px;
+  z-index: 9;
   width: 40px;
-  background: var(--red);
+  background: var(--message);
   border-radius: 50%;
   position: absolute;
   top: var(--main-left-top-mobile);
-  animation: ease-in-out 2s AnimateChat forwards;
+  /* animation: ease-in-out 2s AnimateChat forwards; */
 }
 
 .chat-element-rev {
@@ -300,7 +311,7 @@ p {
     left: var(--main-left-mobile-center);
   }
   50% {
-    top: -50px;
+    top: -150px;
   }
   100% {
     top: var(--main-left-top-mobile);
@@ -313,10 +324,64 @@ p {
     left: var(--right-mob-left-center);
   }
   50% {
-    top: -50px;
+    top: -150px;
   }
   100% {
     top: var(--main-left-top-mobile);
     left: var(--main-left-mobile-center);
+  }
+}
+
+.chat-element ::before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #fff;
+  /* background-color: skyblue; */
+  position: absolute;
+  animation: ease-in-out 1s firstOne linear;
+}
+
+@keyframes firstOne {
+  0% {
+    height: 10px;
+    width: 10px;
+  }
+  50% {
+    height: 30px;
+    width: 30px;
+  }
+  100% {
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.cloud-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .cloud-image:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: rgb(170, 153, 153);
+  }
+  .cloud-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    img {
+      width: 100%;
+    }
   }
 }
