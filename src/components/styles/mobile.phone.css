@@ -109,7 +109,15 @@
     display: flex;
     justify-content: space-around;
   }
-  .text-side {
-    width: 30%;
+  .text-side h1 {
+    /* width: 30%; */
+    font-family: stapel_bold;
+    color: #fff;
+  }
+  .project-desc {
+    /* width: 40%; */
+    font-family: stapel_thin;
+    letter-spacing: 1px;
+    color: #fff;
   }
 }

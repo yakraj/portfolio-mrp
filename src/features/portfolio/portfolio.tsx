@@ -133,6 +133,7 @@ export const Portfolio = () => {
                     <p className="details">express js</p>
                     <hr />
                     <p className="details">gcp</p>
+                    <p className="details">gcp</p>
                     <p className="details">apis</p>
                   </div>
 

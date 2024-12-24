@@ -10,9 +10,9 @@ export const AboutProject = () => {
   const [chats1, setChats1] = useState<any[]>([]); // Specify the type of state 'chats'
   const [whoSent, setWhoSent] = useState<any[]>([]);
   // writing syntax for the text send animation
-  const firstMobile = useRef();
-  const secondMobile = useRef();
-  const chatElement = useRef();
+  const firstMobile = useRef<HTMLElement | null>();
+  const secondMobile = useRef<HTMLElement | null>();
+  const chatElement = useRef<HTMLElement | null>();
 
   useEffect(() => {
     setTimeout(() => {
@@ -149,21 +149,24 @@ export const AboutProject = () => {
 
   useEffect(() => {
     const toPos =
+      firstMobile.current &&
       firstMobile.current.getBoundingClientRect().top -
-      firstMobile.current.parentElement.getBoundingClientRect().top +
-      "px";
+        firstMobile.current.parentElement.getBoundingClientRect().top +
+        "px";
     const leftPos =
+      firstMobile.current &&
       firstMobile.current.getBoundingClientRect().left +
-      firstMobile.current.getBoundingClientRect().width / 2 -
-      firstMobile.current.parentElement.getBoundingClientRect().left -
-      20 +
-      "px";
+        firstMobile.current.getBoundingClientRect().width / 2 -
+        firstMobile.current.parentElement.getBoundingClientRect().left -
+        20 +
+        "px";
     const rightPos =
+      secondMobile.current &&
       secondMobile.current.getBoundingClientRect().left +
-      secondMobile.current.getBoundingClientRect().width / 2 -
-      secondMobile.current.parentElement.getBoundingClientRect().left -
-      20 +
-      "px";
+        secondMobile.current.getBoundingClientRect().width / 2 -
+        secondMobile.current.parentElement.getBoundingClientRect().left -
+        20 +
+        "px";
 
     document.documentElement.style.setProperty("--main-left-top-mobile", toPos);
     document.documentElement.style.setProperty(
@@ -190,13 +193,16 @@ export const AboutProject = () => {
             className="content-body about-project"
           >
             <div className="main-chat-container">
-              <div className="text-side">
-                <h1>Realtime Apps</h1>
+              <div style={{ width: "40%" }} className="text-side">
+                <h1>Realtime Chatting Apps</h1>
                 <p className="project-desc">
-                  Lorem ipsum dolor sit amet consectetur. Urna ultrices ac enim
-                  eu fermentum nam facilisis. Quis praesent et et leo amet
-                  varius. Enim non elementum sed sem varius. Risus tristique nec
-                  ullamcorper enim morbi adipiscing quam.
+                  This chatting application is a real-time communication
+                  platform built using React, Node.js, Express.js, HTTP, and
+                  PostgreSQL. It offers secure user authentication and a
+                  responsive design, ensuring seamless messaging across various
+                  devices. The app's scalable architecture allows it to handle
+                  increasing user loads efficiently, providing a robust and
+                  engaging user experience.
                 </p>
               </div>
               <div className="cloud-container">

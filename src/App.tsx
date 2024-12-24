@@ -5,12 +5,14 @@ import { Portfolio } from "./features/portfolio/portfolio";
 // import { NavBar } from "./features/nav/navbar";
 import "./features/home/home.css";
 import { MainProvider } from "./services/main.context";
+import { Carousel } from "./features/carousel/carousel";
 function App() {
   return (
     <MainProvider>
-      {/* <Home />
-      <Portfolio /> */}
+      <Home />
+      <Portfolio />
       <AboutProject />
+      <Carousel />
       {/* <ContactPage /> */}
     </MainProvider>
   );

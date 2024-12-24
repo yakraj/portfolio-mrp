@@ -74,10 +74,23 @@ export const Home = () => {
               </div>
               {/* description */}
               <p className="myself">
-                In internet I can make your existence and make you famous, A
-                business or a website that requires very precise and best front
-                end development, secure server, fast and interactive. I’m best
-                on my field.
+                I am a versatile full-stack web developer with a strong command
+                of both front-end and back-end technologies. This is my{" "}
+                <a href="https://yakraj.github.io/CSS-Castle/" target="_blank">
+                  first craft
+                </a>{" "}
+                with thousand of lines of CSS, and{" "}
+                <a href="https://ui-generator-psi.vercel.app/" target="_blank">
+                  this is my finest
+                </a>{" "}
+                work to demonstrate my skills.. My expertise extends to React
+                Native for mobile app development. On the server side, I use
+                Node.js and Express.js to build robust APIs, and I manage
+                databases with PostgreSQL, MongoDB, and MySQL. Additionally, I
+                deploy and manage cloud-based solutions using Google Cloud
+                Platform (GCP). My comprehensive skill set allows me to deliver
+                complete, efficient web solutions, ensuring a seamless user
+                experience from start to finish.
               </p>
 
               <button

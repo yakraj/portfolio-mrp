@@ -64,6 +64,7 @@
   text-transform: uppercase;
   padding: 0;
 }
+
 .myself {
   width: 500px;
   color: #a4a4a4;
@@ -75,6 +76,9 @@
   font-weight: 300;
   line-height: 171.023%;
   letter-spacing: 0.63px;
+  a {
+    color: #fff;
+  }
 }
 .branding-title {
   position: relative;
@@ -116,12 +120,17 @@
   flex-shrink: 0;
   backdrop-filter: blur(10px);
 }
+
 .hire-button {
   width: 146px;
   margin-top: 38px;
+  font-family: stapel_thin;
   height: 38px;
+  color: #fff;
+  letter-spacing: 1px;
   border-radius: 19px;
   border: 1px solid #c0c0c0;
+  font-weight: bold;
   background: #656678;
   flex-shrink: 0;
 }

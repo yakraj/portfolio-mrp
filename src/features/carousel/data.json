@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Chatting App",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1735046644/chatting-website.png",
+    "description": "a chatting app for chatting with friends",
+    "link": "https://github.com/yakraj/chatting-app"
+  },
+  {
+    "title": "Choir App",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1735046861/Screenshot_1.png",
+    "description": "A special app for choir members and admin",
+    "link": "https://github.com/yakraj/immanuel-song-planner"
+  },
+  {
+    "title": "Attendance App",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1684196217/Mega_Projects/v5iiic7ya3tk0xdgu0ul.jpg",
+    "description": "A specialized app with calculated data for all excluaive workers.",
+    "link": "https://github.com/yakraj/AttendanceApp"
+  },
+  {
+    "title": "UI Generaor",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1735047288/Screenshot_3.png",
+    "description": "A GUI based app for generating UI for your projects without any coding hassales.",
+    "link": "https://github.com/yakraj/ui-generator"
+  },
+  {
+    "title": "Snap code",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1735047583/Screenshot_4.png",
+    "description": "A web based snap code image taker, with highlighted code.",
+    "link": "https://github.com/yakraj/snap-code"
+  },
+  {
+    "title": "Face Detection",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1682400333/Mega_Projects/toscmcrbkr91gf1f3mrq.png",
+    "description": "A clever face detection app, with clairifai Api.",
+    "link": "https://github.com/yakraj/face-recognition"
+  },
+  {
+    "title": "Company App",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1682478270/Mega_Projects/pho7v1syigc1vz7jio4p.png",
+    "description": "A specialized app for companies requirement.",
+    "link": "https://github.com/yakraj/shift-planner"
+  },
+  {
+    "title": "Client API",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1679304633/Small_Projects/tl1bgamcn0z8cxnwkcyw.png",
+    "description": "A http client for http requests.",
+    "link": "https://github.com/yakraj/clientapi"
+  },
+  {
+    "title": "Clock Timer",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1682398700/Mega_Projects/zh4ihtszhgpinihiu9vz.png",
+    "description": "A timer app for focus.",
+    "link": "https://github.com/yakraj/focus-time"
+  },
+  {
+    "title": "Css Castle",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1682398700/Mega_Projects/zh4ihtszhgpinihiu9vz.png",
+    "description": "A css castle for css lovers, completely made with css.",
+    "link": "https://github.com/yakraj/CSS-Castle"
+  },
+  {
+    "title": "Chatting backend",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1679125795/Mega_Projects/ahsl4ub1y3bubwgkatdo.png",
+    "description": "A backend for chatting website.",
+    "link": "https://github.com/yakraj/Chatting-Backend"
+  },
+  {
+    "title": "E-commerce app",
+    "pic": "https://res.cloudinary.com/wows/image/upload/v1679244194/Mega_Projects/crqwlo6kqgvfrdglnf9e.png",
+    "description": "A E-commerce app for selling products.",
+    "link": "https://github.com/yakraj/mobile-web"
+  }
+]
