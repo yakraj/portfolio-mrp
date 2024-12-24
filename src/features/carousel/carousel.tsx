@@ -3,23 +3,25 @@ import "../home/home.css";
 import "../portfolio/portfolio.css";
 import "./carousel.css";
 import { PortfolioGraphics } from "../../components/portfolio.graphics";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import works from "./data.json";
 
 // import { TestamonyCard } from "../../components/portofolio.testamony";
 // import { NavBar } from "../nav/navbar";
 export const Carousel = () => {
-  const cards: number[] = [1, 2, 3, 4, 5, 6, 7];
-  const cardsCont = useRef();
+  const cardsCont = useRef<HTMLDivElement>(null);
 
   console.log(cardsCont.current);
 
   const NextButton = () => {
-    cardsCont.current.style.scrollLeft += 240;
-    cardsCont.current.scrollLeft += 240;
+    if (cardsCont.current) {
+      cardsCont.current.scrollLeft += 240;
+    }
   };
   const PrevButton = () => {
-    cardsCont.current.scrollLeft -= 240;
+    if (cardsCont.current) {
+      cardsCont.current.scrollLeft -= 240;
+    }
   };
 
   interface Work {
