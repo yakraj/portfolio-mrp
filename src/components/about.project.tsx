@@ -6,13 +6,18 @@ import { useEffect, useState, useRef } from "react";
 import cloudImage from "../assets/cloud.webp";
 import { MobilePhoneOpp } from "./mobile.phone1";
 export const AboutProject = () => {
-  const [chats, setChats] = useState<any[]>([]); // Specify the type of state 'chats'
-  const [chats1, setChats1] = useState<any[]>([]); // Specify the type of state 'chats'
-  const [whoSent, setWhoSent] = useState<any[]>([]);
+  interface Chat {
+    side: string;
+    message: string;
+  }
+
+  const [chats, setChats] = useState<Chat[]>([]); // Specify the type of state 'chats'
+  const [chats1, setChats1] = useState<Chat[]>([]); // Specify the type of state 'chats'
+  const [whoSent, setWhoSent] = useState<string[]>([]);
   // writing syntax for the text send animation
-  const firstMobile = useRef<HTMLElement | null>();
-  const secondMobile = useRef<HTMLElement | null>();
-  const chatElement = useRef<HTMLElement | null>();
+  const firstMobile = useRef<HTMLDivElement | null>(null);
+  const secondMobile = useRef<HTMLDivElement | null>(null);
+  const chatElement = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -38,7 +43,7 @@ export const AboutProject = () => {
                 ...preState,
                 chattings.chattings[whoSent.length],
               ]);
-              chatElement.current.classList.remove("chat-element-rev");
+              chatElement.current?.classList.remove("chat-element-rev");
             }, 2000);
           } else {
             // this is first timeout for receive message
@@ -60,7 +65,7 @@ export const AboutProject = () => {
                 ...preState,
                 chattings.chattings[whoSent.length],
               ]);
-              chatElement.current.classList.add("chat-element-rev");
+              chatElement.current?.classList.add("chat-element-rev");
             }, 2000);
           }
         } else {
@@ -149,24 +154,30 @@ export const AboutProject = () => {
 
   useEffect(() => {
     const toPos =
-      firstMobile.current &&
-      firstMobile.current.getBoundingClientRect().top -
-        firstMobile.current.parentElement.getBoundingClientRect().top +
-        "px";
+      (firstMobile.current &&
+        firstMobile.current.parentElement &&
+        firstMobile.current.getBoundingClientRect().top -
+          firstMobile.current.parentElement.getBoundingClientRect().top +
+          "px") ||
+      null;
     const leftPos =
-      firstMobile.current &&
-      firstMobile.current.getBoundingClientRect().left +
-        firstMobile.current.getBoundingClientRect().width / 2 -
-        firstMobile.current.parentElement.getBoundingClientRect().left -
-        20 +
-        "px";
+      (firstMobile.current &&
+        firstMobile.current.parentElement &&
+        firstMobile.current.getBoundingClientRect().left +
+          firstMobile.current.getBoundingClientRect().width / 2 -
+          firstMobile.current.parentElement.getBoundingClientRect().left -
+          20 +
+          "px") ||
+      null;
     const rightPos =
-      secondMobile.current &&
-      secondMobile.current.getBoundingClientRect().left +
-        secondMobile.current.getBoundingClientRect().width / 2 -
-        secondMobile.current.parentElement.getBoundingClientRect().left -
-        20 +
-        "px";
+      (secondMobile.current &&
+        secondMobile.current.parentElement &&
+        secondMobile.current.getBoundingClientRect().left +
+          secondMobile.current.getBoundingClientRect().width / 2 -
+          secondMobile.current.parentElement.getBoundingClientRect().left -
+          20 +
+          "px") ||
+      null;
 
     document.documentElement.style.setProperty("--main-left-top-mobile", toPos);
     document.documentElement.style.setProperty(

@@ -1,6 +1,16 @@
 import "./styles/mobile.phone.css";
 
-export const MobilePhoneOpp = ({ Re, chats }) => {
+interface Chat {
+  message: string;
+  side: string;
+}
+
+interface MobilePhoneOppProps {
+  Re: React.RefObject<HTMLDivElement>;
+  chats: Chat[];
+}
+
+export const MobilePhoneOpp = ({ Re, chats }: MobilePhoneOppProps) => {
   return (
     <>
       <div ref={Re} className="mobile-phone">
@@ -15,12 +25,14 @@ export const MobilePhoneOpp = ({ Re, chats }) => {
               <div
                 key={i.message + Math.random()}
                 style={{
-                  justifyContent: i.side === "left" && "flex-end",
+                  justifyContent: i.side === "left" ? "flex-end" : undefined,
                 }}
                 className="messagecontainer-left"
               >
                 <div
-                  style={{ backgroundColor: i.side === "left" && "#96d796" }}
+                  style={{
+                    backgroundColor: i.side === "left" ? "#96d796" : undefined,
+                  }}
                   className="text"
                 >
                   {i && i.message}
