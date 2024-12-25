@@ -41,6 +41,29 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .branding-title {
+    transform: scale(0.7);
+    transform-origin: top left;
+    left: 0px;
+  }
+  .myself {
+    width: auto !important;
+    margin-top: -50px !important;
+  }
+  .content-body {
+    display: block;
+  }
+  .he-f {
+    height: auto !important;
+  }
+
+  .social-sites {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
 .small-sirname {
   transform: rotate(-90deg);
   color: #1cffa3;

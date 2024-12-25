@@ -5,6 +5,19 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 480px) {
+  h1.corouseltext {
+    margin-top: 50px !important;
+    font-size: 1.4em;
+  }
+  .topcontent p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .carousel-div .card-content h1 {
+    font-size: 1.4rem;
+  }
+}
 h1.corouseltext {
   display: flex;
   justify-content: center;

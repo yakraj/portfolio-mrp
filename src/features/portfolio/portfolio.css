@@ -46,6 +46,18 @@
   padding: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .branding-portfolio {
+    height: 50px;
+  }
+  .branding-heading {
+    scale: 0.4;
+    transform-origin: top left;
+  }
+  .technology-profile p {
+    font-size: 0.8rem;
+  }
+}
 .branding-heading {
   position: relative;
   > h1 {
@@ -356,7 +368,15 @@ p {
     width: 50px;
   }
 }
-
+@media screen and (max-width: 480px) {
+  .cloud-container {
+    display: none !important;
+  }
+  .text-side {
+    width: auto !important;
+    margin: 0 !important;
+  }
+}
 .cloud-container {
   width: 60%;
   display: flex;
